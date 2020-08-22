@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+  <html lang="en" dir="ltr">
+
+  <head>
+    <script src="chroma.min.js"></script>
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dino's DraftAid</title>
+    <style>
+      .button {
+        background-color: #4CAF50;
+        /* Green */
+        display: inline-block;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 2vw;
+        margin: 4px 2px;
+        cursor: pointer;
+        transition: 0.3s;
+      }
+
+      .button2 {
+        background-color: #008CBA;
+      }
+
+      /* Blue */
+      .button3 {
+        background-color: #f44336;
+      }
+
+      /* Red */
+      .button4 {
+        background-color: #e7e7e7;
+        color: black;
+      }
+
+      /* Gray */
+      .button5 {
+        background-color: #555555;
+      }
+
+      .button:hover{
+        background-color: #e7e7e7;
+        color: black;
+      }
+
+      .input{
+        background-color:#e7e7e7;
+        font-size:14px;
+        border:none;
+        padding:15px 32px;
+        margin:4px 2px;
+        outline-offset: 5px;
+
+      }
+      /* Black */
+    </style>
+  </head>
+
+  <body style="font-family:sans; background-color:#85A0CC;">
+    <script src="draftaid.js"></script>
+    <div id="tools">
+      <table>
+        <tr>
+          <td><button name="startbtn" id="startbtn" class="button button5">Start</button></td>
+          <td><button class="button button5" id="hidebtn">Hide</button></td>
+          <td>
+            <form>
+              <input type="text" id="draftid" class="input"></button>
+            </form>
+          </td>
+          <td>
+            <button class="button button5" id="setbtn">Set Draft</button>
+          </td>
+          <td>
+            <button class="button button5" id="resetbtn">Reset</button>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div id="wrapper" style="overflow:hidden;">
+      <!---<div id="head" style="position:fixed; width:100%; background-color:lightgrey; top:0;left:0; height:300px;"></div>--->
+      <div id="rankingqb" style="vertical-align: top; display:inline-block; width=25%">
+        <table id="qbtable" style="border-collapse:collapse;font-size:0.9vw">
+          <tr>
+            <td>
+              <center><b>QB</b></center>
+            </td>
+          </tr>
+        </table>
+      </div>
+
+      <div id="rankingrb" style="vertical-align:top;display:inline-block;width:25%">
+        <table id="rbtable" style="border-collapse:collapse;font-size:0.9vw">
+          <tr>
+            <td>
+              <center><b>RB</b></center>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div id="rankingwr" style="vertical-align:top;display:inline-block;width:25%">
+        <table id="wrtable" style="border-collapse:collapse;font-size:0.9vw ">
+          <tr>
+            <td>
+              <center><b>WR</b></center>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div id="rankingte" style="vertical-align:top;display:inline-block; width:25%">
+        <table id="tetable" style="border-collapse:collapse;font-size:0.9vw">
+          <tr>
+            <td>
+              <center><b>TE</b></center>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+  </body>
+
+  </html>
