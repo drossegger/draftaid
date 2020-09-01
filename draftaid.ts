@@ -76,7 +76,7 @@ function displayqb(ranking:player[],color){
         team.innerHTML=p.team;
         let player=row.insertCell(-1);
 	if(p.adp === undefined) p.adp=999;
-        player.innerHTML=p.player.substring(0,15)+ " ("+p.adp+")";
+        player.innerHTML=p.player+ " ("+p.adp+")";
 	let value=row.insertCell(-1);
 	value.innerHTML=p.value;
 	let ps=row.insertCell(-1);
@@ -86,7 +86,7 @@ function displayqb(ranking:player[],color){
         rank.style.backgroundColor=color(p.tier);
         team.style.backgroundColor=color(p.tier);
         player.style.backgroundColor=color(p.tier);
-        player.style.fontWeight="bold";
+        //player.style.fontWeight="bold";
 
     }
   }
@@ -106,7 +106,7 @@ function displayte(ranking:player[],color){
         team.innerHTML=p.team;
         let player=row.insertCell(-1);
 	if(p.adp === undefined) p.adp=999;
-        player.innerHTML=p.player.substring(0,15)+ " ("+p.adp+")";
+        player.innerHTML=p.player+ " ("+p.adp+")";
 	let value=row.insertCell(-1);
 	let ps=row.insertCell(-1);
 	ps.innerHTML=p.ps;
@@ -116,7 +116,7 @@ value.innerHTML=p.value;
         rank.style.backgroundColor=color(p.tier);
         team.style.backgroundColor=color(p.tier);
         player.style.backgroundColor=color(p.tier);
-        player.style.fontWeight="bold";
+        //player.style.fontWeight="bold";
 
     }
   }
@@ -136,7 +136,7 @@ function displaywr(ranking:player[],color){
         team.innerHTML=p.team;
         let player=row.insertCell(-1);
 	if(p.adp === undefined) p.adp=999;
-        player.innerHTML=p.player.substring(0,15)+ " ("+p.adp+")";
+        player.innerHTML=p.player+ " ("+p.adp+")";
 	let value=row.insertCell(-1);
 	value.innerHTML=p.value;
 	value.style.backgroundColor=color(p.tier);
@@ -146,7 +146,7 @@ function displaywr(ranking:player[],color){
 	rank.style.backgroundColor=color(p.tier);
         team.style.backgroundColor=color(p.tier);
         player.style.backgroundColor=color(p.tier);
-        player.style.fontWeight="bold";
+        //player.style.fontWeight="bold";
 
     }
   }
@@ -166,7 +166,7 @@ function displayrb(ranking:player[],color){
         team.innerHTML=p.team;
         let player=row.insertCell(-1);
 	if(p.adp === undefined) p.adp=999;
-        player.innerHTML=p.player.substring(0,15)+ " ("+p.adp+")";
+        player.innerHTML=p.player+ " ("+p.adp+")";
 	let value=row.insertCell(-1);
 	let ps=row.insertCell(-1);
 	ps.innerHTML=p.ps;
@@ -176,7 +176,7 @@ value.innerHTML=p.value;
         rank.style.backgroundColor=color(p.tier);
         team.style.backgroundColor=color(p.tier);
         player.style.backgroundColor=color(p.tier);
-        player.style.fontWeight="bold";
+        //player.style.fontWeight="bold";
 
     }
   }
@@ -229,7 +229,7 @@ fetch('https://raw.githubusercontent.com/drossegger/draftaid/master/rankings.jso
     console.log("Start clicked");
     let btn=document.getElementById("startbtn");
     if(btn.innerHTML=="Start"){
-    timerId = setInterval(update, 10000,draftId);
+    timerId = setInterval(update, 3000,draftId);
     btn.innerHTML="Stop";
     }
     else{

@@ -59,6 +59,11 @@
         outline-offset: 5px;
 
       }
+      .playertable{
+        white-space:nowrap;
+        overflow:hidden;
+        text-overflow:ellipsis;
+      }
       /* Black */
     </style>
   </head>
@@ -87,7 +92,8 @@
     <div id="wrapper" style="overflow:hidden;">
       <!---<div id="head" style="position:fixed; width:100%; background-color:lightgrey; top:0;left:0; height:300px;"></div>--->
       <div id="rankingqb" style="vertical-align: top; display:inline-block; width=25%">
-        <table id="qbtable" style="border-collapse:collapse;font-size:0.9vw">
+        <table id="qbtable" class="playertable" style="border-collapse:collapse;font-size:0.9vw"
+          class="playertable">
           <tr>
             <td>
               <center><b>QB</b></center>
@@ -97,7 +103,7 @@
       </div>
 
       <div id="rankingrb" style="vertical-align:top;display:inline-block;width:25%">
-        <table id="rbtable" style="border-collapse:collapse;font-size:0.9vw">
+        <table id="rbtable" class="playertable" style="border-collapse:collapse;font-size:0.9vw">
           <tr>
             <td>
               <center><b>RB</b></center>
@@ -106,7 +112,7 @@
         </table>
       </div>
       <div id="rankingwr" style="vertical-align:top;display:inline-block;width:25%">
-        <table id="wrtable" style="border-collapse:collapse;font-size:0.9vw ">
+        <table id="wrtable" class="playertable" style="border-collapse:collapse;font-size:0.9vw ">
           <tr>
             <td>
               <center><b>WR</b></center>
@@ -115,7 +121,7 @@
         </table>
       </div>
       <div id="rankingte" style="vertical-align:top;display:inline-block; width:25%">
-        <table id="tetable" style="border-collapse:collapse;font-size:0.9vw">
+        <table id="tetable" class="playertable" style="border-collapse:collapse;font-size:0.9vw">
           <tr>
             <td>
               <center><b>TE</b></center>
